@@ -1,7 +1,7 @@
 import os
 import sys
 import pyrealsense2 as rs
-import numpy as numpy
+import numpy as np
 import uuid
 
 pipeline = rs.pipeline()
