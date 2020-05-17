@@ -30,8 +30,8 @@ try:
         if not color_frame:
             continue
         
-        color_image = np.asanyarray(frame.get_data())
-        cv2.imshow('RealSense', color_frame)
+        color_image = np.asanyarray(color_frame.get_data())
+        cv2.imshow('RealSense', color_image)
         
         key = cv2.waitKey(1)
         if (key == 122): # 'p' key
