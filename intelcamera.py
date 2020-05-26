@@ -30,9 +30,16 @@ try:
         color_frame = frames.get_color_frame()
         if not color_frame:
             continue
+<<<<<<< HEAD
 
         color_image = np.asanyarray(color_frame.get_data())
         cv2.imshow('RealSense', color_image)
+=======
+        
+        color_image = np.asanyarray(color_frame.get_data())
+        cv2.imshow('RealSense', color_image)
+        
+>>>>>>> 6501d6d2c29f046b37c878b06e778f19393cc817
         key = cv2.waitKey(1)
         if (key == 112): # 'p' key
             captureFrame(color_image)
